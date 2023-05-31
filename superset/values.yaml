@@ -1,0 +1,36 @@
+supersetCeleryBeat:
+    enabled: true
+
+extraConfigs:
+  import_datasources.yaml: |
+      databases:
+      - allow_file_upload: true
+        allow_ctas: true
+        allow_cvas: true
+        database_name: example-db
+        extra: "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {},\r\n    \"\
+          metadata_cache_timeout\": {},\r\n    \"schemas_allowed_for_file_upload\": []\r\n\
+          }"
+        sqlalchemy_uri: example://example-db.local
+        tables: []
+
+configOverrides:
+    my_override: |
+        # This will make sure the redirect_uri is properly computed, even with SSL offloading
+        FEATURE_FLAGS = {"EMBEDDED_SUPERSET": True,"ENABLE_JAVASCRIPT_CONTROLS":True,"DRILL_BY":True,"DRILL_TO_DETAIL":True,"EMBEDDABLE_CHARTS":True, "ENABLE_TEMPLATE_PROCESSING":True, "DASHBOARD_CROSS_FILTERS":True, "GENERIC_CHART_AXES":True, "HORIZONTAL_FILTER_BAR":True}
+        HTML_SANITIZATION = False
+        ENABLE_PROXY_FIX = True
+        PUBLIC_ROLE_LIKE = "Gamma"
+        WTF_CSRF_ENABLED = False
+        ENABLE_CORS = True 
+        CORS_OPTIONS = { 'supports_credentials': True, 'allow_headers': ['*'], 'resources':['*'], 'origins': ['*', 'http://localhost:8082'] } 
+
+
+bootstrapScript: |
+    #!/bin/bash
+    pip install psycopg2 \
+        redis \
+        apache-superset[cors] \
+        sqlalchemy-bigquery \
+        elasticsearch-dbapi &&\
+    if [ ! -f ~/bootstrap ]; then echo "Running Superset with uid {{ .Values.runAsUser }}" > ~/bootstrap; fi

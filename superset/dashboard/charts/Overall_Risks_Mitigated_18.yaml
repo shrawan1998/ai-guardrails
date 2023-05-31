@@ -1,0 +1,27 @@
+slice_name: Overall Risks Mitigated
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 5__table
+  viz_type: big_number_total
+  slice_id: 18
+  granularity_sqla: created_at
+  time_range: No filter
+  metric: count
+  adhoc_filters: []
+  header_font_size: 0.6
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 3
+query_context: '{"datasource":{"id":5,"type":"table"},"force":false,"queries":[{"time_range":"No
+  filter","granularity":"created_at","filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":["count"],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"5__table","viz_type":"big_number_total","slice_id":18,"granularity_sqla":"created_at","time_range":"No
+  filter","metric":"count","adhoc_filters":[],"header_font_size":0.6,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[3],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: bf81002d-0071-4bc5-a115-c5691d42124c
+version: 1.0.0
+dataset_uuid: 35d6bdf4-5317-4700-a4a9-6cc187af0021

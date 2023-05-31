@@ -1,0 +1,39 @@
+slice_name: Top 20 Active Users
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 6__table
+  viz_type: table
+  slice_id: 24
+  granularity_sqla: created_at
+  time_grain_sqla: P1D
+  time_range: No filter
+  query_mode: aggregate
+  groupby:
+  - created_at
+  - user_email
+  metrics:
+  - count
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters: []
+  timeseries_limit_metric: count
+  order_by_cols: []
+  row_limit: '20'
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  extra_form_data: {}
+  dashboards:
+  - 3
+query_context: '{"datasource":{"id":6,"type":"table"},"force":false,"queries":[{"time_range":"No
+  filter","granularity":"created_at","filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":["created_at","user_email"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":20,"series_limit":0,"series_limit_metric":"count","order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"6__table","viz_type":"table","slice_id":24,"granularity_sqla":"created_at","time_grain_sqla":"P1D","time_range":"No
+  filter","query_mode":"aggregate","groupby":["created_at","user_email"],"metrics":["count"],"all_columns":[],"percent_metrics":[],"adhoc_filters":[],"timeseries_limit_metric":"count","order_by_cols":[],"row_limit":"20","server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","show_cell_bars":true,"color_pn":true,"extra_form_data":{},"dashboards":[3],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: c39bf09c-5851-487a-9280-dcdc78888373
+version: 1.0.0
+dataset_uuid: 2e1a57ad-1463-4514-87ac-25ca27381d9d

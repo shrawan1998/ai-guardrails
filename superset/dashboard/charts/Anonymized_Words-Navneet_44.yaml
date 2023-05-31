@@ -1,0 +1,29 @@
+slice_name: Anonymized Words-Navneet
+description: null
+certified_by: null
+certification_details: null
+viz_type: word_cloud
+params:
+  datasource: 4__table
+  viz_type: word_cloud
+  slice_id: 44
+  granularity_sqla: created_at
+  time_range: No filter
+  series: flagged_text
+  metric: count
+  adhoc_filters: []
+  row_limit: 100
+  size_from: 10
+  size_to: 50
+  rotation: flat
+  color_scheme: echarts4Colors
+  extra_form_data: {}
+  dashboards:
+  - 5
+query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"time_range":"No
+  filter","granularity":"created_at","filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["flagged_text"],"metrics":["count"],"annotation_layers":[],"row_limit":100,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"4__table","viz_type":"word_cloud","slice_id":44,"granularity_sqla":"created_at","time_range":"No
+  filter","series":"flagged_text","metric":"count","adhoc_filters":[],"row_limit":100,"size_from":10,"size_to":50,"rotation":"flat","color_scheme":"echarts4Colors","extra_form_data":{},"dashboards":[5],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: dddeee2b-ee31-4906-9c0b-0cfaaf28eaa1
+version: 1.0.0
+dataset_uuid: be22ad11-94b9-413e-8d91-8a92bbe66493

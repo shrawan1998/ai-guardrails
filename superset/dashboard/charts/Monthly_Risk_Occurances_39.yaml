@@ -1,0 +1,36 @@
+slice_name: Monthly Risk Occurances
+description: null
+certified_by: null
+certification_details: null
+viz_type: cal_heatmap
+params:
+  datasource: 4__table
+  viz_type: cal_heatmap
+  slice_id: 22
+  granularity_sqla: created_at
+  time_range: Last month
+  domain_granularity: month
+  subdomain_granularity: day
+  metrics:
+  - count
+  adhoc_filters: []
+  linear_color_scheme: superset_seq_1
+  cell_size: 30
+  cell_padding: 2
+  cell_radius: ''
+  steps: 10
+  y_axis_format: SMART_NUMBER
+  x_axis_time_format: smart_date
+  show_legend: true
+  show_values: false
+  show_metric_name: false
+  extra_form_data: {}
+  dashboards:
+  - 3
+query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"time_range":"Last
+  month","granularity":"created_at","filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":["count"],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"adhoc_filters":[],"cell_padding":2,"cell_radius":"","cell_size":30,"dashboards":[3],"datasource":"4__table","domain_granularity":"month","extra_form_data":{},"granularity_sqla":"created_at","linear_color_scheme":"superset_seq_1","metrics":["count"],"show_legend":true,"show_metric_name":false,"show_values":false,"slice_id":39,"steps":10,"subdomain_granularity":"day","time_range":"Last
+  month","viz_type":"cal_heatmap","x_axis_time_format":"smart_date","y_axis_format":"SMART_NUMBER","force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 0a63e784-b83d-49ee-ade5-67bc6a4049d3
+version: 1.0.0
+dataset_uuid: be22ad11-94b9-413e-8d91-8a92bbe66493

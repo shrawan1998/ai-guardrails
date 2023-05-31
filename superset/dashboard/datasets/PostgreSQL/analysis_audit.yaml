@@ -1,0 +1,130 @@
+table_name: analysis_audit
+main_dttm_col: created_at
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: chat_audits
+sql: ''
+params: null
+template_params: null
+filter_select_enabled: false
+fetch_values_predicate: null
+extra: null
+uuid: be22ad11-94b9-413e-8d91-8a92bbe66493
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: null
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: Total Count Result
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ' IF(Count(*) IS NULL, 0,Count(*))'
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: created_at
+  verbose_name: null
+  is_dttm: true
+  is_active: null
+  type: TIMESTAMP WITHOUT TIME ZONE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: id
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: UUID
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: analysed_entity
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: flagged_text
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: user_email
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: criticality
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: text
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+version: 1.0.0
+database_uuid: 87481573-de39-4e45-bda4-f6c46e4e8f09

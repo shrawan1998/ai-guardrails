@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+openai = "*"
+flask = "*"
+flask-restful = "*"
+presidio-analyzer = "*"
+presidio-anonymizer = "*"
+flask-cors = "*"
+spacy = "*"
+pymongo = "*"
+flask-oidc = "*"
+itsdangerous = "~=2.0.1"
+certifi = "*"
+python-dotenv = "*"
+psycopg2-binary = "*"
+transformers = "*"
+sentencepiece = "*"
+flask-smorest = "*"
+marshmallow = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+start = "python3 src/app/app.py"

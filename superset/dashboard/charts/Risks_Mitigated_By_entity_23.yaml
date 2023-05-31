@@ -1,0 +1,35 @@
+slice_name: Risks Mitigated By entity
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 5__table
+  viz_type: table
+  granularity_sqla: created_at
+  time_grain_sqla: P1D
+  time_range: No filter
+  query_mode: aggregate
+  groupby:
+  - flagged_text
+  metrics:
+  - count
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters: []
+  order_by_cols: []
+  row_limit: 10000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":5,"type":"table"},"force":false,"queries":[{"time_range":"No
+  filter","granularity":"created_at","filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":["flagged_text"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":10000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"5__table","viz_type":"table","granularity_sqla":"created_at","time_grain_sqla":"P1D","time_range":"No
+  filter","query_mode":"aggregate","groupby":["flagged_text"],"metrics":["count"],"all_columns":[],"percent_metrics":[],"adhoc_filters":[],"order_by_cols":[],"row_limit":10000,"server_page_length":10,"order_desc":true,"table_timestamp_format":"smart_date","show_cell_bars":true,"color_pn":true,"extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 73d356ef-f82d-4ec1-89b7-b51d0a9102f5
+version: 1.0.0
+dataset_uuid: 35d6bdf4-5317-4700-a4a9-6cc187af0021
