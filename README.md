@@ -1,7 +1,7 @@
 
 # [AI-Guardrails™](https://www.ai-guardrails.com/)
 
-[AI-Guardrails™](https://www.ai-guardrails.com/) is specifically designed for small to mid-sized enterprises to address their Governance, Risk and Compliance needs. AI-Guardrails™ provides continuous protection via a secure and reliable solution for employees utilizing public LLM models while safeguarding sensitive corporate information.
+[AI-Guardrails™](https://www.ai-guardrails.com/) is specifically designed for small to mid-sized enterprises to address their Governance, Risk and Compliance needs. AI-Guardrails™ provides continuous protection via a secure and reliable solution for employees utilizing LLM models while safeguarding sensitive corporate information.
 
 
 
